@@ -47,6 +47,11 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
+  // chart.js
+  gulp.src([
+    './node_modules/chart.js/dist/Chart.min.js'
+    ])
+    .pipe(gulp.dest('./vendor/chartjs'))
 });
 
 // Compile SCSS
