@@ -1,0 +1,20 @@
+// Styling for chartjs containers
+
+.chart-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.the-chart {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
