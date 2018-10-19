@@ -72,15 +72,39 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #17a2b8;
+  background-color: #007bff;
 }
 
 .dev-icons {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #17a2b8;
+  color: #007bff;
+}
+
+.dev-text {
+  font-family: "Arial", Gadget, sans-serif;
+  font-size: 1rem;
+}
+
+.dev-text .list-inline-item i:hover {
+  color: #007bff;
+}
+
+.dev-text.list-inline-item {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #868e96;
+  border-radius: 5px;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.dev-text.list-inline-item:hover {
+  background-color: #007bff;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +114,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #36cee6;
+  outline-color: #4da3ff;
 }
 
 @media (min-width: 992px) {
@@ -149,6 +173,28 @@ p.lead {
   }
 }
 
+.navbar-social-icons a {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar-social-icons a:last-child {
+  margin-right: 0;
+}
+
+.navbar-social-icons a:hover {
+  background-color: #868e96;
+}
+
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -176,17 +222,43 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #17a2b8 !important;
+  background-color: #007bff !important;
 }
 
 .text-primary {
-  color: #17a2b8 !important;
+  color: #007bff !important;
 }
 
 a {
-  color: #17a2b8;
+  color: #007bff;
 }
 
 a:hover, a:focus, a:active {
-  color: #0f6674;
+  color: #0056b3;
+}
+
+.chart-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.chart-container:hover {
+  color: #007bff;
+}
+
+.the-chart {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
