@@ -71,10 +71,34 @@ p.lead {
 }
 
 .dev-icons {
-  font-size: 3rem;
+  font-size: 2rem;
   .list-inline-item i {
     &:hover {
       color: $primary;
     }
+  }
+}
+
+.dev-text {
+  font-family: "Arial", Gadget, sans-serif;
+  font-size: 1rem;
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.dev-text.list-inline-item {
+  text-align: center;
+  vertical-align: middle;
+  background-color: $gray-600;
+  border-radius: 5px;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  &:hover {
+    background-color: $primary;
   }
 }

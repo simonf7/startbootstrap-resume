@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>Simon Foster</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +32,20 @@
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
       </a>
+      <div class="navbar-social-icons">
+        <a href="https://www.linkedin.com/in/simon-foster/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/simonf7">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/simonf7">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/simonf7">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,9 +66,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -66,11 +77,15 @@
           <h1 class="mb-0">Simon
             <span class="text-primary">Foster</span>
           </h1>
-          <p class="lead mb-5 mt-5">
+          <p class="lead mt-5">
             I am an experienced full-stack developer with over twenty years experience in a multitude of languages and environments. I love using technology and working with users to create the right solutions for them with enthusiasm and creativity. My aim is to continually expand my knowledge and to challenge my abilities as an experienced professional in the world of technology.
           </p>
+          <p class="lead mb-5">
+            Experience: Software development (PHP, C#, Java, C), Databases (SQL Server, MySQL), Operational management, UX design 
+            (HTML, CSS), DevOps (Linux, Windows, VMWare, Hyper-V).
+          </p>
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/simonf7/">
+            <a href="https://www.linkedin.com/in/simon-foster/">
               <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/simonf7">
@@ -97,7 +112,7 @@
               <h3 class="mb-0">IT Manager/Senior Developer</h3>
               <div class="subheading mb-3">Cambridge Occupational Analysts</div>
               <ul>
-                <li>Responsible for product development, leading a small team to transform a legacy paper-based system into a modern web application utilising RESTful APIs. Maintaining legacy projects and network infrastructure, ensuring everything runs smoothly for staff and customers.</li>
+                <li>Responsible for the IT department, mainly working on new product development which involved transforming a legacy SQL Server/Access based system into a modern web application utilising RESTful APIs. In addition, maintaining existing products and infrastructure, and offering guidance and support to colleagues to ensure everything runs smoothly.</li>
                 <li>Languages:<br />PHP (inc. Laravel), HTML, CSS, SQL, JS (Angular2+), C#, VB6/VBA, C/C++</li>
                 <li>Environments:<br />Windows (Visual Studio, SQL Server), Linux (Apache, MySQL), VMWare</li>
               </ul>
@@ -112,8 +127,8 @@
               <h3 class="mb-0">Lead Developer/Manager</h3>
               <div class="subheading mb-3">Cambridge Occupational Analysts</div>
               <ul>
-                <li>Responsible for maintaining and developing new products including both back office and customer facing web applications. Also including the provision and support of infrastructure, including servers and networking.</li>
-                <li>Languages:<br />C/C++, PHP, HTML, CSS, SQL, Java, C#, VB6/VBA</li>
+                <li>Part of the IT team responsible for maintaining, developing and supporting new products including both back office and customer facing web applications. Also including the provision and support of server and network infrastructure.</li>
+                <li>Languages:<br />C/C++, PHP, HTML, CSS, SQL, Java, JS (jQuery), C#, VB6/VBA</li>
                 <li>Environments:<br />Linux (Apache, MySQL), Windows (Server, SQL Server, Exchange)</li>
               </ul>
             </div>
@@ -129,7 +144,7 @@
                 <ul>
                   <li>Design and implementation of a new integrated database application system for producing careers reports including server and network infrastructure to replace a legacy system built with Acorn RISC-OS systems. Maintenance and development of commercial applications, including technical support.</li>
                   <li>Languages:<br />C/C++, SQL,PHP, VB6/VBA</li>
-                  <li>Environments:<br />Linux (Apache, MySQL), Windows (Server, SQL Server, Exchange)</li>
+                  <li>Environments:<br />Windows (NT4, SQL Server, Exchange), Linux (Apache), RISC-OS</li>
                 </ul>
               </div>
               <div class="resume-date text-md-right">
@@ -196,39 +211,60 @@
           
           <div class="subheading mb-3">Programming Languagues</div>
 
-          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="PHP">
+          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="PHP5 / PHP7">
             <i class="fab fa-php"></i>
             <div class="the-chart">
                 <canvas id="phpChart"></canvas>
             </div>
           </div>
-          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="MySQL / SQL Server">
+          <div class="chart-container dev-text float-left" data-toggle="tooltip" data-placement="bottom" title="MySQL / SQL Server">
             SQL
             <div class="the-chart">
                 <canvas id="sqlChart"></canvas>
             </div>
           </div>  
-          <div class="chart-container dev-icons float-left">
+          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="HTML5">
             <i class="fab fa-html5"></i>
             <div class="the-chart">
               <canvas id="html5Chart"></canvas>
             </div>
           </div>
-          <div class="chart-container dev-icons">
+          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="CSS3">
+            <i class="fab fa-css3"></i>
+            <div class="the-chart">
+              <canvas id="css3Chart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+            <i class="fab fa-js-square"></i>
+            <div class="the-chart">
+              <canvas id="jsChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container dev-icons float-left" data-toggle="tooltip" data-placement="bottom" title="Java">
+            <i class="fab fa-java"></i>
+            <div class="the-chart">
+              <canvas id="javaChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-container dev-text" data-toggle="tooltip" data-placement="bottom" title="C#">
             C#
             <div class="the-chart">
               <canvas id="csharpChart"></canvas>
             </div>
           </div>
             
-          <div class="subheading mb-3">Frameworks</div>
+          <div class="subheading mb-3 mt-5">Frameworks</div>
           <ul class="list-inline dev-icons">
-              <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Laravel 5">
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Laravel 5">
               <i class="fab fa-laravel"></i>
+            </li>
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Angular2+">
+              <i class="fab fa-angular"></i>
             </li>
           </ul>
 
-          <div class="subheading mb-3">Tools</div>
+          <div class="subheading mb-3 mt-5">Tools</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Sass">
               <i class="fab fa-sass"></i>
@@ -236,32 +272,23 @@
             <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="WordPress">
               <i class="fab fa-wordpress"></i>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Node Package Manager">
               <i class="fab fa-npm"></i>
+            </li>
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Gulp">
+              <i class="fab fa-gulp"></i>
             </li>
             <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="GitKraken">
               <i class="fab fa-gitkraken"></i>
             </li>
-            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Visual Studio">
+            <li class="list-inline-item dev-text" data-toggle="tooltip" data-placement="bottom" title="Visual Studio">
               VS
+            </li>
+            <li class="list-inline-item dev-text" data-toggle="tooltip" data-placement="bottom" title="Jira: Issue and Project Tracking">
+              Jira
             </li>
           </ul>
 
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
         </div>
       </section>
 
@@ -277,40 +304,6 @@
       </section>
 
       <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section>
 
     </div>
 
@@ -358,9 +351,12 @@
           };
 
           var charts = {
-            'phpChart': 90,
-            'sqlChart': 90,
-            'html5Chart': 60,
+            'phpChart': 95,
+            'sqlChart': 95,
+            'html5Chart': 85,
+            'css3Chart': 80,
+            'jsChart': 80,
+            'javaChart': 65,
             'csharpChart': 70,
           };
 
@@ -372,7 +368,7 @@
               data: {
                 datasets: [{
                   data: [value, 100-value],
-                  backgroundColor: [(value >= 70) ? 'green' : 'orange','white']
+                  backgroundColor: [(value > 70) ? 'green' : 'orange','white']
                 }],
               },
               options: options
