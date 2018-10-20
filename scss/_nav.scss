@@ -11,6 +11,10 @@
   }
 }
 
+.navbar-social-icons {
+  display: none;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -53,6 +57,9 @@
         }
       }
     }
+  }
+  .navbar-social-icons {
+    display: block;
   }
 }
 
