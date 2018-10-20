@@ -274,8 +274,8 @@ a:hover, a:focus, a:active {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?q63x35");
-  src: url("fonts/icomoon.eot?q63x35#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?q63x35") format("truetype"), url("fonts/icomoon.woff?q63x35") format("woff"), url("fonts/icomoon.svg?q63x35#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?o2249k");
+  src: url("fonts/icomoon.eot?o2249k#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?o2249k") format("truetype"), url("fonts/icomoon.woff?o2249k") format("woff"), url("fonts/icomoon.svg?o2249k#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -283,6 +283,7 @@ a:hover, a:focus, a:active {
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -311,6 +312,10 @@ i {
 
 .icon-github:before {
   content: "\e904";
+}
+
+.icon-jquery:before {
+  content: "\e913";
 }
 
 .icon-npm:before {
@@ -367,4 +372,8 @@ i {
 
 .icon-visualstudiocode:before {
   content: "\e90f";
+}
+
+.icon-new-tab:before {
+  content: "\ea7e";
 }
