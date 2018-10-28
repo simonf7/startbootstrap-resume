@@ -46,6 +46,12 @@ gulp.task('vendor', function() {
     './node_modules/chart.js/dist/Chart.min.js'
     ])
     .pipe(gulp.dest('./vendor/chartjs'))
+
+  // masonry
+  gulp.src([
+    './node_modules/masonry-layout/dist/masonry.pkgd.min.js'
+    ])
+    .pipe(gulp.dest('./vendor/masonry'))
 });
 
 // Compile SCSS

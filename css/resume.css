@@ -273,6 +273,10 @@ a:hover, a:focus, a:active {
   height: 100%;
 }
 
+.grid-item {
+  width: 120px;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?o2249k");
