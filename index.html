@@ -334,71 +334,10 @@
     <!-- Chart.js -->
     <script src="vendor/chartjs/Chart.min.js"></script>
 
+    <!-- Masonry -->
+    <script src="vendor/masonry/masonry.pkgd.min.js"></script>
+
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
-    <!-- Draw donut charts -->
-    <script>
-      var inView = false;
-
-      function isScrolledIntoView(elem)
-      {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-
-        return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-      }
-
-      $(window).scroll(function() {
-        if (isScrolledIntoView('#phpChart')) {
-          if (inView) { return; }
-          inView = true;
-          var options = {
-            legend: {
-              display: false
-            },
-            tooltips: {
-              enabled: false
-            },
-            events: [],
-            responsive: true,
-            maintainAspectRatio: false
-          };
-
-          var charts = {
-            'phpChart': 95,
-            'sqlChart': 95,
-            'html5Chart': 85,
-            'css3Chart': 80,
-            'jsChart': 75,
-            'javaChart': 65,
-            'csharpChart': 70,
-          };
-
-          for (var key in charts) {
-            var value = charts[key];
-            var ctx = document.getElementById(key);
-            var myDoughnutChart = new Chart(ctx, {
-              type: 'doughnut',
-              data: {
-                datasets: [{
-                  data: [value, 100-value],
-                  backgroundColor: [(value > 70) ? 'green' : 'orange','white']
-                }],
-              },
-              options: options
-            });
-          }
-        } else {
-          inView = false;  
-        }
-      });
-
-      $('[data-toggle="tooltip"]').tooltip();
-    </script>
   </body>
-
 </html>
