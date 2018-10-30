@@ -92,12 +92,12 @@
     }
   });
 
-  // initialise tooltips
+  // Initialise tooltips
   $('[data-toggle="tooltip"]').tooltip();
 
-  // initialise masonry
+  // Initialise masonry
   $('.grid').masonry({
-    // options
+    // Options
     itemSelector: '.grid-item',
     columnWidth: 0
   });
