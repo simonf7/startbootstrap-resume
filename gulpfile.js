@@ -120,8 +120,8 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task
-gulp.task('dev', gulp.series('css', 'js', 'browserSync', function() {
+gulp.task('dev', gulp.series('css', 'js', gulp.parallel('browserSync', function() {
   gulp.watch('./scss/*.scss', gulp.series('css'));
   gulp.watch('./js/*.js', gulp.series('js'));
-  gulp.watch('./*.html', browserSync.reload);
-}));
+  gulp.watch('./*.html').on('change', browserSync.reload);
+})));
