@@ -46,6 +46,7 @@
     'jsChart': 75,
     'javaChart': 65,
     'csharpChart': 70,
+    'vbChart': 95,
   };
 
   // Initialise charts
