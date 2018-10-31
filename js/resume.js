@@ -93,8 +93,8 @@
   });
 
   // Initialise tooltips
-  $('[data-toggle="tooltip"]').tooltip();
-
+  $('[data-toggle="tooltip"]').tooltip({animation: true});
+  
   // Initialise masonry
   $('.grid').masonry({
     // Options

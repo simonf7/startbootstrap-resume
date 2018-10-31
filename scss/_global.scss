@@ -61,6 +61,7 @@ p.lead {
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
+    transition: background-color .25s ease-in-out;
     &:last-child {
       margin-right: 0;
     }
@@ -74,6 +75,7 @@ p.lead {
 .dev-icons {
   font-size: 2rem;
   .list-inline-item i {
+    transition: color .25s ease-in-out;
     &:hover {
       color: $primary;
     }
@@ -84,8 +86,17 @@ p.lead {
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 1rem;
   .list-inline-item i {
+    transition: color .25s ease-in-out;
     &:hover {
       color: $primary;
     }
+  }
+}
+
+.glow {
+  opacity: 0.9;
+  transition: opacity .25s ease-in-out;
+  &:hover {
+    opacity: 1.0;
   }
 }
