@@ -93,7 +93,8 @@ p.lead {
   }
 }
 
-.glow {
+.thumbnail {
+  border-radius: 8px;
   opacity: 0.9;
   transition: opacity .25s ease-in-out;
   &:hover {

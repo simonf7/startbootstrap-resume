@@ -105,13 +105,14 @@ p.lead {
   color: #007bff;
 }
 
-.glow {
+.thumbnail {
+  border-radius: 8px;
   opacity: 0.9;
   -webkit-transition: opacity .25s ease-in-out;
   transition: opacity .25s ease-in-out;
 }
 
-.glow:hover {
+.thumbnail:hover {
   opacity: 1.0;
 }
 
