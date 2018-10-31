@@ -396,3 +396,7 @@ i {
 .icon-new-tab:before {
   content: "\ea7e";
 }
+
+.icon-file-pdf:before {
+  content: "\eadf";
+}
