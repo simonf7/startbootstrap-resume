@@ -1,5 +1,6 @@
 .bg-primary {
-  background-color: $primary !important;
+  background-color: $primary;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .text-primary {
@@ -8,7 +9,7 @@
 
 a {
   color: $primary;
-  transition: color .25s ease-in-out;
+  transition: color 0.25s ease-in-out;
   &:hover,
   &:focus,
   &:active {

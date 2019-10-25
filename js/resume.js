@@ -1,22 +1,22 @@
 (function($) {
-  "use strict"; // Start of use strict
+  'use strict'; // Start of use strict
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        $("html, body").animate(
+        $('html, body').animate(
           {
             scrollTop: target.offset().top
           },
           1000,
-          "easeInOutExpo"
+          'easeInOutExpo'
         );
         return false;
       }
@@ -24,13 +24,23 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function() {
-    $(".navbar-collapse").collapse("hide");
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $("body").scrollspy({
-    target: "#sideNav"
+  $('body').scrollspy({
+    target: '#sideNav'
+  });
+
+  // Event on activation of an element
+  var lastClass = '';
+  $(window).on('activate.bs.scrollspy', function(e, obj) {
+    if (lastClass != '') {
+      $('#sideNav').removeClass(lastClass);
+    }
+    lastClass = 'bg-' + obj.relatedTarget.substring(1);
+    $('#sideNav').addClass(lastClass);
   });
 
   // Check whether an element has been scrolled into view
@@ -65,7 +75,7 @@
   // Handle scroll
   $(window).scroll(function() {
     for (var key in charts) {
-      if (isScrolledIntoView("#" + key)) {
+      if (isScrolledIntoView('#' + key)) {
         if (!inView[key]) {
           inView[key] = true;
           var options = {
@@ -83,12 +93,12 @@
           var value = charts[key];
           var ctx = document.getElementById(key);
           var myDoughnutChart = new Chart(ctx, {
-            type: "doughnut",
+            type: 'doughnut',
             data: {
               datasets: [
                 {
                   data: [value, 100 - value],
-                  backgroundColor: [value > 70 ? "green" : "orange", "white"]
+                  backgroundColor: [value > 70 ? 'green' : 'orange', 'white']
                 }
               ]
             },
@@ -105,9 +115,9 @@
   $('[data-toggle="tooltip"]').tooltip({ animation: true });
 
   // Initialise masonry
-  $(".grid").masonry({
+  $('.grid').masonry({
     // Options
-    itemSelector: ".grid-item",
+    itemSelector: '.grid-item',
     columnWidth: 0
   });
 })(jQuery); // End of use strict

@@ -77,7 +77,7 @@
     line-height: 2rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    transition: background-color .25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
     &:last-child {
       margin-right: 0;
     }
@@ -86,4 +86,24 @@
       background-color: $secondary;
     }
   }
+}
+
+.bg-about {
+  background-color: $about !important;
+}
+
+.bg-skills {
+  background-color: $skills !important;
+}
+
+.bg-experience {
+  background-color: $experience !important;
+}
+
+.bg-education {
+  background-color: $education !important;
+}
+
+.bg-interests {
+  background-color: $interests !important;
 }
